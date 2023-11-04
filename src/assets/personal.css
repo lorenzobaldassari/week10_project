@@ -12198,11 +12198,11 @@ textarea.form-control-lg {
 }
 
 #box {
-  height: 70px;
+  height: 80px;
 }
 
 #img2 {
   position: absolute !important;
   left: 80px !important;
-  bottom: -20px;
+  bottom: 0px;
 }/*# sourceMappingURL=personal.css.map */

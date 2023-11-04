@@ -5,7 +5,6 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { format } from "date-fns";
 import { it } from "date-fns/locale";
-import { getActiveElement } from "@testing-library/user-event/dist/utils";
 
 // const newYork = [40.700494406032185, -74.03393769328348];
 // const roma = [41.86556867816433, 12.487018671109787];

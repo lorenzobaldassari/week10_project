@@ -193,7 +193,7 @@ const MainCity = (props) => {
                           <img
                             src={`http://openweathermap.org/img/w/${item.weather[0].icon}.png`}
                             alt=""
-                            width={150}
+                            width={130}
                             id="img2"
                           />
                         </div>
