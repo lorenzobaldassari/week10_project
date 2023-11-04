@@ -31,7 +31,7 @@ const SearchBar = (props) => {
   return (
     <>
       <div className="d-flex justify-content-center">
-        <p className="fs-5 text-light mb-0 mt-5">
+        <p className="fs-5 text-light mb-0 mt-1">
           <span className="fs-5">
             {format(new Date(), `eeee d LLL, HH:mm`, { locale: it })}
           </span>

@@ -72,7 +72,7 @@ const MainCity = (props) => {
     {alert1&& <Alert>Attenzione! La citta selezionata non esiste! cercane una esistente</Alert>}
     
       {ok && (
-        <div>
+        <div id="mainCity">
           <Container fluid>
             <Row className="dd">
               <Col className="col-12  d-flex justify-content-around heigthCol flex-column">
@@ -98,7 +98,7 @@ const MainCity = (props) => {
                   {ok && (
                     <div>
 
-                    <div className="display-2 mb-0 d-flex align-items-baseline">
+                    <div className="display-2 mb-0 d-flex align-items-baseline" id="coll">
                       <span className="">
                         {meteo.weather[0].description.slice(0, 1).toUpperCase()}
                         {meteo.weather[0].description.slice(1)}
@@ -108,9 +108,9 @@ const MainCity = (props) => {
                           <p className="mb-0 display-5">T {meteo.main.temp}°</p>
                           )}
                       </div>
+                      {meteo.rain[`1h`] && meteo.rain[`3h`]===undefined &&<span className="fs-6">{meteo.rain[`1h`]} ml di pioggia nell'ultima ora</span>}
+                       { meteo.rain[`3h`]&&<span className="fs-6">{meteo.rain[`3h`]}ml di pioggia nelle ultime 3 ore</span>}
                     </div>
-                      {/* {meteo.rain[`1h`] && meteo.rain[`3h`]===undefined &&<span className="">{meteo.rain[`1h`]} ml di pioggia nell'ultima ora</span>}
-                       { meteo.rain[`3h`]&&<span>{meteo.rain[`3h`]}ml di pioggia nelle ultime 3 ore</span>} */}
                     </div>
                   )}
 
@@ -175,14 +175,14 @@ const MainCity = (props) => {
               </Col>
             </Row>
           </Container>
-          <Container fluid>
-            <Row className="flex-nowrap mt-4" id="scrollRow">
+          <Container fluid id="underSection">
+            <Row className="flex-nowrap mt-4 pb-0" id="scrollRow">
               {ok1 &&
                 days.list.slice().map((item, i) => {
                   return (
                     <Col
                       key={i}
-                      className="col-md-3 col-6 border border-top-0 border-bottom-0 border-1 border-black py-2"
+                      className="col-md-3 col-sm-6 col-12 border  border-1 border-black py-2 " id="colScroll"
                     >
                       <div className="d-flex flex-column align-items-center position-relative">
                         <p className="mb-0 text-white">
