@@ -40,7 +40,7 @@ const SearchBar = (props) => {
       </div>
       <Form
         onSubmit={ghost}
-        className="d-flex justify-content-center align-items-center my-3"
+        className="d-flex justify-content-center align-items-center mb-2"
       >
         <Form.Group
           className=" w-30 d-flex align-items-center"
@@ -56,7 +56,7 @@ const SearchBar = (props) => {
             className="formInput"
           />
         </Form.Group>
-        <Button variant="secondary" type="submit">
+        <Button className="bg-secondary" type="submit">
           Cerca
         </Button>
       </Form>

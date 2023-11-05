@@ -12189,7 +12189,7 @@ textarea.form-control-lg {
 }
 
 .heigthCol {
-  height: 50vh;
+  height: 53vh;
 }
 
 #colScroll {
@@ -12247,4 +12247,15 @@ textarea.form-control-lg {
   #scrollRow::-webkit-scrollbar-thumb:hover {
     visibility: visible;
   }
+}
+.home-row {
+  height: 70vh;
+}
+
+.cc {
+  background-color: rgba(128, 128, 128, 0.419);
+}
+
+.spinner {
+  z-index: 50;
 }/*# sourceMappingURL=personal.css.map */
