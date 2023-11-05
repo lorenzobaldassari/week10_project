@@ -32,7 +32,7 @@ const MainCity = (props) => {
         setTimeout(() => setSpinner(false), 200);
 
         let e = meteoData.timezone;
-        let c = (e - 3600) * 200;
+        let c = (e - 3600) * 1000;
         const d = new Date().getTime();
         const f = c + d;
         const cityTimeH = format(new Date(f), `HH:mm`);
@@ -54,7 +54,6 @@ const MainCity = (props) => {
     try {
       let response1 = await fetch(
         `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=metric&lang=it&appid=01929813c6bea4249187f26bf743df18`
-
       );
       if (response1.ok) {
         const data1 = await response1.json();
