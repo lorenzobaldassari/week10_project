@@ -93,7 +93,7 @@ const MainCity = (props) => {
           variant="secondary"
         />
       )}
-      {allerta2 && <Alert>Errore nel recuper dati dalla fetch</Alert>}
+      {allerta2 && <Alert>Errore nel recupero dati dalla fetch</Alert>}
       {alert1 && (
         <Alert>
           Attenzione! La citta selezionata non esiste! cercane una esistente

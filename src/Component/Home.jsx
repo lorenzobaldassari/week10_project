@@ -37,7 +37,7 @@ const Home = () => {
     try {
       let response1 = await fetch(
         // `api.openweathermap.org/data/2.5/forecast?lat=${array[0]}&lon=${array[1]}&units=metric&lang=it&appid=${apiKey}`
-        `https://api.openweathermap.org/data/2.5/forecast?lat=${lat1}&lon=${lon1}&units=metric&lang=it&appid=01929813c6bea4249187f26bf743df18`
+        `https://api.openweat hermap.org/data/2.5/forecast?lat=${lat1}&lon=${lon1}&units=metric&lang=it&appid=01929813c6bea4249187f26bf743df18`
         // `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&lang=it&appid=${apiKey}`
       );
       if (response1.ok) {
