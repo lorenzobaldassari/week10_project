@@ -35,8 +35,17 @@
 .dd{
   background-color: rgba(128, 128, 128, 0.419);
 }
-.heigthCol{
-  height: 53vh;
+
+@media screen and (max-width:576px) {
+  .heigthCol{
+    height: 70vh !important;
+  }}
+@media screen and (min-width:576px) {
+  .heigthCol{
+    height: 53vh !important;
+  }
+  
+  
 }
 #colScroll{
   height: 100% !important;
