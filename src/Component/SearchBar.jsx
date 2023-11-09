@@ -1,4 +1,4 @@
-import { Form, Button } from "react-bootstrap";
+import { Form, Button, FormLabel } from "react-bootstrap";
 // import SingleCity from "./SingleCity";
 // import MainCity from "./MainCity";
 import { useState } from "react";
@@ -46,6 +46,7 @@ const SearchBar = (props) => {
           className=" w-30 d-flex align-items-center"
           controlId="formBasicEmail"
         >
+          <FormLabel for />
           <Form.Control
             required
             type="text"
