@@ -126,7 +126,7 @@ const MainCity = (props) => {
                   </div>
                   {ok && (
                     <h3 className="mb-0">
-                      a {meteo.name} sono le {cityHour} (ora locale)
+                      a {meteo.name} sono le {cityHour}
                     </h3>
                   )}
                   {ok && (
