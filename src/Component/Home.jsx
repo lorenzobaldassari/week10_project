@@ -37,7 +37,7 @@ const Home = () => {
     try {
       let response1 = await fetch(
         // `api.openweathermap.org/data/2.5/forecast?lat=${array[0]}&lon=${array[1]}&units=metric&lang=it&appid=${apiKey}`
-        `https://api.openweat hermap.org/data/2.5/forecast?lat=${lat1}&lon=${lon1}&units=metric&lang=it&appid=01929813c6bea4249187f26bf743df18`
+        `https://api.openweathermap.org/data/2.5/forecast?lat=${lat1}&lon=${lon1}&units=metric&lang=it&appid=01929813c6bea4249187f26bf743df18`
         // `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&lang=it&appid=${apiKey}`
       );
       if (response1.ok) {
@@ -78,12 +78,12 @@ const Home = () => {
 
   useEffect(() => {
     aa();
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
     <>
-      {ok === false && ok1 === false && spinner && (
+      {/* {ok === false && ok1 === false && spinner && (
         <Spinner
           className="spinner position-absolute top-50 start-50"
           animation="border"
@@ -140,11 +140,6 @@ const Home = () => {
                             {meteo.rain[`1h`]} ml di pioggia nell'ultima ora
                           </span>
                         )}
-                        {/* {meteo.rain[`3h`] && (
-                          <span className="fs-6">
-                            {meteo.rain[`3h`]}ml di pioggia nelle ultime 3 ore
-                          </span>
-                        )} */}
                       </div>
                     </div>
                   )}
@@ -152,7 +147,6 @@ const Home = () => {
                   <Row className="w-100 justify-content-center">
                     <Col className="col-12 col-md-4 d-flex flex-column align-items-center">
                       <div className="d-flex flex-column align-items-start">
-                        {/* <div className="fs-2 me-2 d-flex flex-column w-100 align-items-center"> */}
                         <div className="d-flex flex-column align-items-start ">
                           {ok && (
                             <p className="fs-2 mb-0">
@@ -168,7 +162,6 @@ const Home = () => {
                             </p>
                           )}
                         </div>
-                        {/* </div> */}
                       </div>
                     </Col>
                     <Col className=" col-12 col-md-4 d-flex flex-column align-items-center">
@@ -246,7 +239,7 @@ const Home = () => {
         <Alert className="bg-secondary">
           Non riusciamo a recuperare la tua geolocalizzazione! cerca una citta`
         </Alert>
-      )}
+      )} */}
     </>
   );
 };
